@@ -1,0 +1,212 @@
+/**CSS VARIABELEN**/
+:root{
+    --be-blue:#4bcaff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** GENERAL CSS SETTINGS **/
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.align-items-center{
+    align-items:center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.justify-content-around{
+    justify-content: space-between;
+}
+
+.w-25{
+    width:25%;
+}
+.w-50{
+    width:50%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+
+.w-60{
+    width:60%;
+}
+
+/**BEGIN FONT**/
+@font-face {
+    font-family: sgbold;
+    src:url("../webfonts/SegoeUIBold.woff");
+}
+
+@font-face {
+    font-family: sglight;
+    src:url("../webfonts/SegoeUILight.ttf");
+}
+
+
+/**END FONT**/
+
+/**initialise body**/
+body{
+    width:1920px;
+    margin: 0 auto; /**om het in midden te krijgen**/
+}
+
+/**BEGIN NAV & HEADER**/
+#fullheader{
+    background: url("../images/background.png") no-repeat;
+}
+nav{
+    width:1175px;
+    margin: 0 auto;
+}
+
+#headertop{
+    font-family: sgbold;
+     background:rgba(57,68,75,80%);
+    padding-top: 55px;
+    padding-bottom: 55px;
+ }
+
+#brand{
+    font-size: 1.875rem;
+    color: white;
+}
+
+#brand span{
+    color: #4bcaff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li a{ /**van ul naar li naar a=dit is een link**/
+    text-decoration: none; /**onderlijnen wegdoen**/
+    text-transform: uppercase;
+    color:white;
+    font-size: 14px;
+    /**deze twee codes is voor "ul li a:hover", om te voor zorgen dat niets verschoven word**/
+    padding:10px 18px;
+    border:2px solid transparent; /**!!!ZET DE BORDER TRANSPARENT!!!**/
+}
+
+ul li a:hover{
+    padding:10px 18px;
+    border:2px solid #4bcaff;
+    color: var(--be-blue);
+}
+
+
+/**END NAV**/
+
+/**BEGIN HERO**/
+#hero{
+    font-family: sglight;
+    font-size:2.625rem;
+    color:white;
+    text-transform: uppercase;
+    padding-top:249px;
+    padding-bottom:249px;
+}
+
+/**DIT IS OM DIV AAN TE SPREKEN ZONDER EEN ID TE GEVEN, JE GAAT NET ZOALS EEN FOLDERLOCATIE TOT OP EEN BEPAALDE MOMENT ZEGGEN, VANAF HIER VOER JE ALLE WIJZIGIGNEN UIT**/
+#hero div:first-child{
+   width:36%;
+}
+
+#hero div:last-child{
+    width:50%;
+}
+
+#hero div:first-child,#hero div:last-child{
+    background:rgba(57,68,75,80%);
+    margin:5px 0px; /**verbonden met margin**/
+}
+
+#hero div p{
+    padding: 5px 0px; /**verbonden met margin**/
+}
+/**END HERO**/
+
+/**BEGIN SERVICES**/
+#services{
+    background: var(--be-blue);
+    color:white;
+}
+
+#services div{
+    width:1175px;
+    margin: 0px auto;
+}
+
+#services h1{
+    font-family: sgbold;
+    font-size:30px;
+    padding-bottom: 8px;
+    margin-bottom: 23px;
+}
+
+#services h1 span{ /**HET SER gedeelte in service word enkel onderlijned**/
+    text-underline-offset: 8px;
+    text-decoration: underline;
+}
+
+#services h2{
+    font-family: sgbold;
+    font-size:24px;
+    padding-top:23px;
+    padding-bottom:18px;
+    text-transform:uppercase;
+}
+
+#services p{
+    font-family: sgbold;
+    font-size:12px;
+}
+
+#line{
+    width:100px !important;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+
+#serviceswrapper{
+    padding:40px 0px; !important;
+}
+
+#services article{
+    width:320px;
+}
+/**END SERVICES**/

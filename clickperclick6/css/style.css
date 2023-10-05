@@ -1,0 +1,37 @@
+*{
+    box-sizing:border-box;
+}
+#parent{
+    position: relative;
+    background: black;
+    width: 300px;
+    height:300px;
+
+}
+
+#bloka, #blokb, #blokc {
+    height:200px;
+    width:200px;
+    position:absolute;
+
+}
+
+#bloka{
+    background:red;
+    /*margin-top:10px;*/
+    /*margin-left:10px;*/
+    bottom:0px;
+    right:0px;
+}
+
+#blokb{
+    background: yellow;
+    /*margin-bottom: 20px;*/
+    left:0px
+}
+
+#blokc{
+    background: blue;
+    /*margin-bottom: 10px;*/
+    right:0px
+}
