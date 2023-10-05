@@ -74,6 +74,11 @@
     src:url("../webfonts/SegoeUILight.ttf");
 }
 
+@font-face {
+    font-family: sgregular;
+    src:url("../webfonts/SegoeUI.woff");
+}
+
 
 /**END FONT**/
 
@@ -196,11 +201,11 @@ ul li a:hover{
     font-size:12px;
 }
 
-#line{
-    width:100px !important;
-    border-bottom: 1px solid white;
-    margin-bottom: 40px;
-}
+/*#line{*/
+/*    width:100px !important;*/
+/*    border-bottom: 1px solid white;*/
+/*    margin-bottom: 40px;*/
+/*}*/
 
 #serviceswrapper{
     padding:40px 0px; !important;
@@ -210,3 +215,44 @@ ul li a:hover{
     width:320px;
 }
 /**END SERVICES**/
+
+/**BEGIN VIDEO**/
+#video{
+    background:rgba(57,68,75,100%);
+}
+
+#videowrapper{
+    width:1175px;
+    margin: 0px auto;
+}
+
+#videowrapper h3{
+    font-family: sglight;
+    font-size:30px;
+    color:white;
+    padding-top:110px;
+    padding-left:15px;
+}
+
+#videowrapper p{
+    font-family: sgregular;
+    font-size:14px;
+    color:white;
+}
+
+#topp{
+    padding-top:75px;
+    padding-bottom:35px;
+}
+
+#whiteline{
+    border-bottom: 1px solid white;
+    width: 60px;
+    margin-left: -10px;
+    padding-top: 35px;
+    margin-bottom: 125px;
+}
+
+
+
+/**END VIDEO**/
